@@ -14,4 +14,4 @@ http.createServer(async (req, res) => {
     res.writeHead(200, { 'Content-Type': types[path.extname(target)] || 'application/octet-stream', 'Cache-Control': 'no-cache' });
     res.end(data);
   } catch { res.writeHead(404); res.end('Página não encontrada.'); }
-}).listen(port, '127.0.0.1', () => console.log(`Local: http://127.0.0.1:${port}`));
+}).listen(port, '0.0.0.0', () => console.log(`Local: http://127.0.0.1:${port}`));
