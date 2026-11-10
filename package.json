@@ -1,0 +1,8 @@
+{
+  "name": "yaslo-boutique-gestao",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Gestão de estoque e operações da Yas&Lo Boutique",
+  "scripts": { "start": "node server.mjs", "test": "node --test tests/*.test.js" }
+}
